@@ -13,6 +13,25 @@
 	</div>
 	<div class="container padding-y-20">
 		<!-- ここから -->
+		<?php 
+		// $value = "A";
+		$value = $_POST["inputVal"];
+		switch ( $value ) {
+			case "A":
+				echo "Aが入力されました";
+				break;
+			case "B":
+				echo "Bが入力されました";
+				break;
+			case "":
+				echo "何も入力されていません";
+				break;
+			default:
+				echo "A、B以外が入力されました";
+				break;
+		}
+		?>
+
 		<!-- ここまで -->
 	</div>
 </body>
